@@ -1,0 +1,16 @@
+{
+  "name": "country-api",
+  "version": "1.0.0",
+  "description": "api project who connected every country in the world",
+  "license": "MIT",
+  "author": "joe ngeserq",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "dependencies": {
+  }
+}
