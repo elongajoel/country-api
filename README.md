@@ -1,24 +1,36 @@
-Country-api
-cette petite application node communique avec l'api restcountry pour afficher des informations relatives à tous les pays du monde fournient par restcountry.
+# Country-api
+Cette petite application Node communique avec l'API RestCountries pour afficher des informations relatives à tous les pays du monde fournies par RestCountries.
 
-stack
-    -node 22
-    -module node:http
-    -tailwind CDN
-    -RestCountries v5
-    -render
+## Stack actuel
+- Node 22
+- module `node:http`
 
-variable d'environnement
-    RESETCOUNTRIES_API_KEY
 
-prerequis
-    -node 22
+## Stack prévue
+- Tailwind CDN
+- RestCountries v5
 
-script
-    npm install
-    npm run dev : lancement de l'application en mode developpement
-    npm start : lancement en mode production
-    npm test : lancement du runner test integre a node js, 
+## Variables d'environnement
+`RESTCOUNTRIES_API_KEY`, la clé est obligatoire à mettre dans .env, jamais commitée.
 
-documentation
-    [workflow](./docs/workflow.md)
+## Prérequis
+- Node 22
+
+## Scripts
+- npm install
+- npm run dev : lancement de l'application en mode développement
+- npm start : lancement du serveur
+- npm test : lancement des tests
+
+## Structure
+Navigateur → country-api → RestCountries
+Les données sont récupérées grâce à l'api de restcountries par notre projet country-api qui les expose via une interface en HTML stylisée avec tailwind
+
+## Installation
+1. npm install
+2. copier .env.example vers .env
+3. renseigner la clé RESTCOUNTRIES_API_KEY
+4. npm start
+
+## Statut
+En développement
