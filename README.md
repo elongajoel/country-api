@@ -9,7 +9,7 @@ stack
     -render
 
 variable d'environnement
-    RESTCOUNTRY_API_KEY
+    RESETCOUNTRIES_API_KEY
 
 prerequis
     -node 22
